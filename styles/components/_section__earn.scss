@@ -1,0 +1,90 @@
+.section__earn {
+	.earn__holder {
+		background: linear-gradient(
+			94.9deg,
+			#fff5dd 1.6%,
+			rgba(170, 86, 254, 0.32) 38.13%,
+			rgba(254, 86, 217, 0.28) 58.65%,
+			rgba(86, 254, 254, 0.28) 99.73%
+		);
+		box-shadow: -10px 10px 50px rgba(0, 0, 0, 0.1),
+			inset 10px 10px 60px rgba(255, 255, 255, 0.4);
+		border-radius: 20px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding: 40px 0;
+		@media only screen and (min-width: 1024px) {
+			padding: 60px 0;
+		}
+	}
+
+	.earn__elements_holder {
+		display: flex;
+		width: 100%;
+		flex-wrap: wrap;
+		row-gap: 30px;
+		@media only screen and (min-width: 768px) {
+			justify-content: space-evenly;
+			flex-wrap: nowrap;
+		}
+	}
+
+	.earn__item {
+		width: 100%;
+		padding: 0 20px;
+		@media only screen and (min-width: 768px) {
+			padding: 0;
+			width: 24.18%;
+		}
+	}
+
+	.earn__item_title {
+		font-style: normal;
+		font-weight: 700;
+		font-size: 22px;
+		line-height: 120%;
+		text-align: center;
+		color: #000000;
+		@media only screen and (min-width: 1024px) {
+			font-size: 32px;
+		}
+	}
+
+	.earn__item_inner_element {
+		font-style: normal;
+		font-weight: 400;
+		font-size: 12px;
+		line-height: 120%;
+		color: $color-primary;
+		padding-left: 25px;
+		position: relative;
+		@media only screen and (min-width: 1024px) {
+			font-size: 16px;
+		}
+
+		&:not(:last-child) {
+			margin-bottom: 8px;
+		}
+
+		&::before {
+			position: absolute;
+			content: "";
+			width: 6px;
+			height: 6px;
+			border-radius: 50%;
+			background-color: $color-primary;
+			top: 5px;
+			left: 9px;
+			@media only screen and (min-width: 1024px) {
+				top: 9px;
+			}
+		}
+	}
+
+	.earn__item_text {
+		p {
+			text-align: center;
+		}
+	}
+}

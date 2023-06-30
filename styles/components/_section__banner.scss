@@ -1,0 +1,60 @@
+.section__banner {
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	padding: 30px 0;
+	@media only screen and (min-width: 768px) {
+		padding: 60px 0 100px;
+	}
+	@media only screen and (min-width: 1440px) {
+		padding: 110px 0 268px;
+	}
+
+	.banner__inner_holder {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.banner__content_holder {
+		@media only screen and (min-width: 768px) {
+			width: 55%;
+		}
+		@media only screen and (min-width: 1440px) {
+			max-width: 743px;
+			width: 100%;
+		}
+	}
+
+	.title {
+		max-width: 488px;
+	}
+
+	.button__holder {
+		display: flex;
+		gap: 23px;
+	}
+
+	.download__button_holder {
+		max-width: 221px;
+		width: 100%;
+	}
+
+	.banner__img_holder {
+		display: flex;
+		justify-content: flex-end;
+	}
+
+	.banner__img {
+		margin-right: -15px;
+		max-width: 400px;
+		@media only screen and (min-width: 768px) {
+			margin-right: unset;
+			position: absolute;
+			right: 0;
+			top: 40px;
+			width: 41.35%;
+			max-width: 794px;
+		}
+	}
+}

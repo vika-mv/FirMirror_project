@@ -1,0 +1,35 @@
+.calculator__table {
+	.table__row {
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 120%;
+		color: #000000;
+		display: flex;
+		justify-content: space-between;
+		gap: 4px;
+		&:not(:last-child) {
+			margin-bottom: 5px;
+		}
+		@media only screen and (min-width: 1024px) {
+			font-size: 24px;
+		}
+
+		&.title {
+			margin-bottom: 17px;
+			font-weight: 700;
+			font-size: 18px;
+			@media only screen and (min-width: 1024px) {
+				font-size: 32px;
+			}
+		}
+	}
+
+	.table__col_left {
+		width: 56.54%;
+	}
+
+	.table__col_right {
+		width: 42.31%;
+		text-align: end;
+	}
+}
