@@ -849,6 +849,9 @@ body.open-nav {
     flex-wrap: nowrap;
   }
 }
+.section__earn .earn__title {
+  color: #000000;
+}
 .section__earn .earn__item {
   width: 100%;
   padding: 0 20px;
